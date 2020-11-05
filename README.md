@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Required Environment Variables
+
+Create a .env file on the root directory (or set environment variables through your CDN).
+
+### `REACT_APP_MAPBOX_MAP_API_KEY`
+
+This is required for rendering the map from [Mapbox](https://docs.mapbox.com/mapbox-gl-js/api/).
+
+#### How to create one
+
+Go to [Mapbox account page](https://account.mapbox.com/auth/signin/?route-to=%22https://account.mapbox.com/%22) and create an account if not created already. From the top-right navbar, select "Tokens" and "Create a Token". Name it however you you like and set whatever scopes you need, though as it said when creating, none is required to retrive tilesets. It's recommended to setup URL restriction when pushing to production, but for development, you don't need to. Then click "Create token", confirm your password, and copy the created token.
+
 ## Available Scripts
 
 In the project directory, you can run:
